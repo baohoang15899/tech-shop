@@ -1,3 +1,6 @@
+## Note
+Remember to import the DB
+Admin username: baodepzai, password:123456
 
 ## Screen shot
 ![image](https://user-images.githubusercontent.com/76032137/114984812-4d214b80-9ebc-11eb-8f1a-5ab3c4d39c62.png)
