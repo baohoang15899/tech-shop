@@ -8,6 +8,7 @@
 </p>
 
 ## About Laravel
+![image](https://user-images.githubusercontent.com/76032137/114984601-1b0fe980-9ebc-11eb-96ab-0be6c69727ee.png)
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
