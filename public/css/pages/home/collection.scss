@@ -1,0 +1,65 @@
+.collection{
+    &__content{
+        padding: 70px 0px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 30px;
+        &-detail{
+           border: 1px #d8dadf solid ;
+           position: relative;
+           color: $white;
+           font-family: $mont;
+           font-weight: 600;
+           img{
+               height: 250px;
+           }
+           .name{
+               top: 30%;
+               font-size: 22px;
+               text-transform: uppercase;
+               left: 10%;
+               z-index: 2;
+               position: absolute;
+
+           }
+           .shop{
+            margin-top: 20px;
+            top: 50%;
+            font-size: 14px;
+            text-transform: uppercase;
+            left: 10%;
+            z-index: 2;
+            position: absolute;
+
+        }
+           &::after{
+               position: absolute;
+               content: "";
+               background-color: rgba($color: $red, $alpha: 0.9);
+               top: 0;
+               bottom: 0;
+               left: 0;
+               right: 0;
+               transition: all ease-in-out 0.4s;
+           } 
+           &:hover::after{
+            background-color: rgba($color: $red, $alpha: 0.8);
+        }    
+        }
+        @media screen and (max-width: 800px) {
+            grid-template-columns: 1fr;
+            column-gap: initial;
+            row-gap: 30px;
+            &-detail{
+                margin: auto;
+                width: 60vw;
+                img{
+                    height: 200px;
+                }
+            }
+          }
+          @media screen and (max-width: 600px) {
+            width: 100%;
+          }
+    }
+}

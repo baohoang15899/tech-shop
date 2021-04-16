@@ -1,0 +1,32 @@
+// .banner{
+//     background-position: center;
+//     background-size: cover;
+//     padding-top: 226px;
+//     padding-bottom: 196px;
+//     position: relative;
+//     z-index: 1;
+//     &::after{
+//         z-index: -1;
+//         content:"";
+//         position: absolute;
+//         background-color: rgba($color: black, $alpha: 0.5);
+//         top: 0;
+//         bottom: 0;
+//         left: 0;
+//         right: 0;
+//     }
+//     &__content{
+//         text-transform: uppercase;
+//         &-text{
+//             @include font(56px,$white,normal);
+//         }
+//         &-item{
+//             margin-top: 50px;
+//             @include font(56px,$white,normal);
+//         }
+//         &-description{
+//             margin-top: 50px;
+//             @include font(56px,$white,normal);
+//         }
+//     }
+// }

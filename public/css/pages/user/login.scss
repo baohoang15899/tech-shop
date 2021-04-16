@@ -1,0 +1,65 @@
+.user{
+    min-height: 700px;
+    &__content{
+        padding: 60px 0px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        &-title{
+            font-family: $mont;
+            margin-bottom: 20px;
+        }
+        &-mess{
+            font-family: $mont;
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 14px;
+            color: $red;
+        }
+        form{
+            padding: 40px;
+            border: 1px solid #d8dadf ;
+            .input{
+                font-family: $mont;
+                font-size: 14px;
+                &:nth-child(1){
+                    margin-top: -10px;
+                }
+                margin-top: 30px;
+                display: flex;
+                justify-content: space-between;
+                input{
+                    border: none;
+                    outline: none;
+                    border-bottom: 1px solid #d8dadf;
+                    margin-left: 10px;
+                }
+            }
+            .btn{
+                text-align: center;
+                margin-top: 50px;
+                button{
+                    font-family: $mont;
+                    text-transform: uppercase;
+                    width: 100%;
+                    outline: none;
+                    background-color: $red;
+                    border: none;
+                    padding: 10px 0px;
+                    color: $white;
+                }
+            }
+        }
+        @include max-breakpoint(600){
+            &-title{
+                font-size: 16px;
+            }
+            form{
+                .input{
+                    font-size: 12px;
+                }
+            }
+      }
+    }
+}

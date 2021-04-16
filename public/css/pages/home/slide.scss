@@ -1,0 +1,103 @@
+.slide{
+    &__content{
+        padding: 20px 0px;
+        position: relative;
+        &-next{
+            color: $white;
+            z-index: 100;
+            position: absolute;
+            top: 50%;
+            right: 5%;
+            transform: translateY(-50%);
+            background-color: $red;
+            padding: 8px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        &-back{
+            color: $white;
+            border-radius: 50%;
+            background-color: $red;
+            z-index: 100;
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            transform: translateY(-50%);
+            padding: 8px;
+            cursor: pointer;
+        }
+        &-show{
+            display: none;
+            position: relative;
+            animation-name: fade;
+            animation-duration: 1s;
+            &::after{
+                position: absolute;
+                background-color: rgba($color: $black, $alpha: 0.5);
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                content: "";
+            }
+            img{
+                height: 500px;
+                @include max-breakpoint(600){
+                    height: 300px;
+                }
+            }
+            &.add{
+                display: block;
+            }
+            @keyframes fade {
+                from{opacity: 0.8;}
+                to{opacity: 1;}
+            }
+        }
+        &-group{
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            display: flex;
+        }
+        &-nav{
+            cursor: pointer;
+            width: 50px;
+            border: 1px solid $red;
+            height: 10px;
+            transition: all ease-in-out 0.4s;
+            &:nth-child(2){
+                margin: 0px 10px;
+            }
+            &.add{
+                background-color: $white;
+            }
+        }
+        &-text{
+            text-transform: uppercase;
+            position: absolute;
+            z-index: 70;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-family: $mont;
+            animation: fadee;
+            width: 400px;
+            animation-duration: 1s;
+            text-align: center;
+            @include font(32px,$white,normal);
+            @keyframes fadee {
+                from{opacity: 0.2; left: 45%;}
+                to{opacity: 1; left: 50%;}
+            }
+            @include max-breakpoint(900){
+                font-size: 22px;
+            }
+            @include max-breakpoint(500){
+                font-size: 14px;
+                width: 200px;
+            }
+        }
+    }
+}

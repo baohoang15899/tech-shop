@@ -1,0 +1,161 @@
+.cart{
+    min-height: 700px;
+    &__content{
+        padding: 70px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        &-del{
+            background-color: $red;
+            color: $white;
+            padding: 8px 25px;
+            border-radius: 18px;
+            transition: all ease-in-out 0.2s;
+            &:hover{
+                background-color: rgb(206, 20, 20);
+            }
+        }
+        &-title{
+            font-family: $mont;
+            font-size: 22px;
+            margin-bottom: 50px;
+        }
+        table{
+            margin-bottom: 50px;
+            border-collapse: collapse; 
+            font-family: $mont;
+            width: 100%;
+            th{
+                text-align: left;
+                padding: 10px;
+            }
+            td{
+                padding: 20px;
+            }
+        }
+        &-order{
+            display: flex;
+            flex-direction: column;
+            font-family: $mont;
+            text-align: right;
+            margin-bottom: 50px;
+            .payment{
+                margin-top: 20px;
+            }
+            a{
+                border-radius: 18px;
+                background-color: $red;
+                color: $white;
+                padding: 10px 25px;
+                transition: all ease-in-out 0.2s;
+                &:hover{
+                    background-color: rgb(206, 20, 20);
+                }
+            }
+        }
+        &-qty{
+            input{
+                width: 50px;
+                padding: 4px;
+            }
+            button{
+                background-color: $red;
+                border: none;
+                outline: none;
+                color: $white;
+                font-size: 14px;
+                padding: 5px;
+                border-radius: 8px;
+            }
+        }
+        &-body{
+            background-color: rgb(255, 251, 251);
+            border-bottom: 2px solid rgb(207, 199, 199);
+        }
+        &-header{
+            background-color: $red;
+            color: white;
+            font-size: 16px;
+        }
+        @include max-breakpoint(800){
+            overflow-x: scroll;
+            overflow-y: hidden;
+            table{
+                width: 800px;
+                margin: auto;
+            }
+            &-order{
+                margin-top: 20px;
+            }
+        }
+    }
+}
+.infoCart{
+    min-height: 700px;
+    &__content{
+        padding: 60px 0px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        &-title{
+            font-family: $mont;
+            margin-bottom: 20px;
+        }
+        &-mess{
+            font-family: $mont;
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 14px;
+            color: $red;
+        }
+        form{
+            padding: 40px;
+            border: 1px solid #d8dadf ;
+            .input{
+                font-family: $mont;
+                font-size: 14px;
+                &:nth-child(1){
+                    margin-top: -10px;
+                }
+                margin-top: 30px;
+                display: flex;
+                justify-content: space-between;
+                input{
+                    border: none;
+                    outline: none;
+                    border-bottom: 1px solid #d8dadf;
+                    margin-left: 10px;
+                }
+                textarea{
+                    outline: none;
+                    height: 100px;
+                }
+            }
+            .btn{
+                text-align: center;
+                margin-top: 50px;
+                button{
+                    font-family: $mont;
+                    text-transform: uppercase;
+                    width: 100%;
+                    outline: none;
+                    background-color: $red;
+                    border: none;
+                    padding: 10px 0px;
+                    color: $white;
+                }
+            }
+        }
+    }
+    @include max-breakpoint(800){
+        form{
+            .input{
+                textarea{
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}

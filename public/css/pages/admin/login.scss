@@ -1,0 +1,40 @@
+.group{
+
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: $mont;
+    form{
+        padding: 30px;
+        border: 1px solid #d8dadf ;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        input{
+            outline: none;
+            border: none;
+            border-bottom: 1px solid #d8dadf;
+            margin-top: 20px;
+            width: 300px;
+        }
+        .button{
+            outline: none;
+            padding: 8px 35px;
+            font-family: $mont;
+            background-color: $red;
+            border: none;
+            text-transform: uppercase;
+            margin-top: 20px;
+            color: $white;
+        }
+    }
+    .mess{
+        margin-top: 15px;
+        font-size: 14px;
+        color: $red;
+    }
+}
