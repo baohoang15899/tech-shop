@@ -1,5 +1,5 @@
 ## Note
-Remember to import the DB
+Remember to import the DB.
 Admin username: baodepzai, password:123456
 
 ## Screen shot
